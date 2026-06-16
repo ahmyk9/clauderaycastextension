@@ -4,7 +4,7 @@
   "title": "Ask Claude Desktop",
   "description": "Type a prompt in Raycast, press Tab, and it opens the Claude desktop app, pastes your prompt, and submits it.",
   "icon": "icon.png",
-  "author": "ahmedkhilji99",
+  "author": "ahmed_khilji",
   "license": "MIT",
   "categories": ["Productivity", "Applications"],
   "platforms": ["macOS", "Windows"],
@@ -66,13 +66,18 @@
     "@raycast/api": "^1.94.0"
   },
   "devDependencies": {
+    "@raycast/eslint-config": "^2.0.4",
     "@types/node": "^22.13.0",
+    "@types/react": "^19.0.0",
+    "eslint": "^9.22.0",
+    "prettier": "^3.5.3",
     "typescript": "^5.7.0"
   },
   "scripts": {
     "build": "ray build -e dist",
     "dev": "ray develop",
     "lint": "ray lint",
+    "fix-lint": "ray lint --fix",
     "publish": "npx @raycast/api@latest publish"
   }
 }

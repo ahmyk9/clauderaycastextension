@@ -1,12 +1,4 @@
-import {
-  Clipboard,
-  LaunchProps,
-  Toast,
-  closeMainWindow,
-  getPreferenceValues,
-  showHUD,
-  showToast,
-} from "@raycast/api";
+import { Clipboard, LaunchProps, Toast, closeMainWindow, getPreferenceValues, showHUD, showToast } from "@raycast/api";
 import { exec } from "node:child_process";
 import { promisify } from "node:util";
 
@@ -50,9 +42,7 @@ export default async function Command(props: Props) {
   // and `?q=` pre-fills the composer. Because the text rides in the URL, it also
   // survives a cold start, where keystroke-based pasting used to fire too early.
   // Long prompts skip `q` (which would be truncated) and are pasted instead.
-  const deepLink = isLong
-    ? "claude://claude.ai/new"
-    : `claude://claude.ai/new?q=${encodeURIComponent(prompt)}`;
+  const deepLink = isLong ? "claude://claude.ai/new" : `claude://claude.ai/new?q=${encodeURIComponent(prompt)}`;
 
   let previousClipboard: string | undefined;
   if (prefs.preserveClipboard) {
