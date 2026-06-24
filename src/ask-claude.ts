@@ -94,7 +94,7 @@ async function sendOnMac(prefs: Preferences, deepLink: string, isLong: boolean, 
     `delay ${settle}`,
   ];
   if (isLong) {
-    // Empty composer (no q): paste the full prompt from the clipboard.
+    // Empty composer (no q): paste the full prompt from the clipboard!
     script.push(`keystroke "v" using {command down}`, `delay 0.4`);
   }
   if (prefs.autoSubmit) {
