@@ -1,6 +1,6 @@
 {
   "$schema": "https://www.raycast.com/schemas/extension.json",
-  "name": "clauderaycastextension",
+  "name": "ask-claude-desktop",
   "title": "Ask Claude Desktop",
   "description": "Type a prompt in Raycast, press Tab, and it opens the Claude desktop app, pastes your prompt, and submits it.",
   "icon": "icon.png",
